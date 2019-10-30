@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.no-training{
+  margin: 5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*header css */
+
+.header{
+  height: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 1%;
+}
+
+.input-box{
+  padding: 1em;
+  height: 2.5em;
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: none;
+  margin: 1.2em 0;
+}
+
+.btn{
+  height: 3.5em;
+  width: 15%;
+  background: #f00;
+  color: #fff;
+  border: 1px solid #f00;
+  box-shadow: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 1.5em 0;
+}
+
+
+.hide{
+  display: none;
+}
+
+/* display css */
+
+h3{
+  margin: 0.5em auto;
+}
+
+.event-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.event-item{
+  background: #fff;
+  padding: 0.5em;
+  margin: 0.5em;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  justify-content: space-between;
+  height: 2.5em;
+  align-items: center;
+}
+
+.event-item span {
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.underline{
+  border-bottom: 1px solid #ccc;
+  background: #ccc;
+}
+
+.highlight{
+  background: #09d3ac;
+}
+
+.edit-btn{
+  height: 3em;
+  width: 7%;
+  background: #f00;
+  color: #fff;
+  border: 1px solid #f00;
+  box-shadow: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 1.5em 0;
+}
+
+
+/* input css */
+
+.new-event {
+  background: #fff;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+h3{
+  margin: 1em 0;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
