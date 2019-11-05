@@ -45,8 +45,8 @@ const handleSubmit = (e, props) => {
       data[boxdata[i].name] = boxdata[i].value;
     }
     let olddata = props.data;
-    let newdata = [...olddata, data];
-    localStorage.setItem("events", JSON.stringify(newdata));
+    olddata.concat(data);
+    localStorage.setItem("events", JSON.stringify(olddata));
     props.input(false);
   }
 }
