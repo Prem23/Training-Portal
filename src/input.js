@@ -44,7 +44,7 @@ const handleSubmit = (e, props) => {
     for(let i = 0; i < boxdata.length; i++){
       data[boxdata[i].name] = boxdata[i].value;
     }
-    let olddata = props.data;
+    let olddata = props.data || [];
     olddata.push(data);
     localStorage.setItem("events", JSON.stringify(olddata));
     props.input(false);
