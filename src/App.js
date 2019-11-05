@@ -17,7 +17,7 @@ const App = () =>{
           <input type="text" name="search" className="input-box" placeholder="Enter training name to search" onKeyUp={(e) => handleValue(e,setdisplay)} />
           <button className="btn" onClick={() => setInput(true)}>Schedule a Training</button>
         </div>
-        {isEvents && !input ? <Display data={events} display={display} input={setInput} /> : <div className="no-training">No Trainings Scheduled</div> }
+        {isEvents && !input ? <Display data={events} display={display} input={setInput} /> : (!input) ? <div className="no-training">No Trainings Scheduled</div> : "" }
         {input ? <Input data={events} input={setInput}/> : ""}
     </div>
   );
